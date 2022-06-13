@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    background-color: lightblue;
+}
+
+p{
+    margin: 0;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 20px;
+}
+
+.sort{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.sort > div:first-child{
+    display: flex;
+}
+
+.sort > div:last-child{
+    display: none;
+}
+
+.sort > div:first-child > button{
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.sort > div:first-child > button:first-child{
+    margin-right: 10px;
+}
+
+.sort-button-icon{
+    margin-left: 3px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    margin: 10px 0 0 3px;
+}
+
+.search > img{
+    margin-right: 5px;
+}
+
+.search > input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.products{
+    margin: 40px 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 100px;
+}
+
+.product{
+    height: 100px;
+    width: 320px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.book{
+    height: 100%;
+    width: 30%;
+    background-color: green;
+    margin-right: 10px;
+}
+
+.book-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.buy{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart{
+    height: 700px;
+    position: relative;
+
+}
+
+.cart > div{
+    width: 100%;
+}
+
+.cart > div > h2{
+    text-align: center;
+}
+
+.price{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.price > hr{
+     width: 100%;
+}
+ 
+.category-block-visible{
+    display: block!important;
+}
+ 
+.product-cart{
+    overflow: hidden; /* высота нашего блока */
+    overflow-y: scroll; /* прокрутка по вертикали */
+    max-height: 570px;
+}
+
